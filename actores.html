@@ -1,0 +1,73 @@
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Actores</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+  <div id="container">
+
+		<div id="ficha">
+        
+			<div id="menu">
+				<div class="menu">
+					<a href="#">Inicio</a>
+					<a href="/peliculas.html">Nueva pelicula</a>
+					<a href="#">Actor</a>
+					<a href="/directores.html">Director</a>
+				</div>
+			</div>
+		
+			<div id="content">
+
+				<h1>ACTORES</h1>
+			
+				<form action="query_funciones_FINAL.php" method="post">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" value="">
+					
+					
+					<label>Apellidos:</label>
+					<input type="text" name="apellidos" value="">
+
+					<!-- <label>IMDB</label>-->
+					<!-- <input type="text" name="imdb" value="">-->
+			
+			
+					<button name="escribir_registro" type="submit" value="Enviar Datos">Añadir</button>
+					
+					
+					
+					<button type="reset">Eliminar</button>
+					
+					
+				</form>
+					
+					
+				<div class="col">
+					<form action="query_funciones_FINAL.php" method="post">
+						
+						<select id="lista-actor" name="lista-actor" size="10" multiple="multiple">
+							<option value="Harrison Ford" selected="selected">Harrison Ford</option>
+							<option value="Marc Hamill">Marc Hamill</option>
+							<option value="Carrie Fisher">Carrie Fisher</option>
+							<option value="Keanu Reeves">Keanu Reeves</option>
+						</select>
+						<button type="reset" class="btn">Borrar</button>
+					</form>
+				</div>
+					
+
+									
+			
+      </div>
+        <div id="footer">
+            FILMOTECA 2018 ©
+				</div>
+			</div>
+    </div>
+
+	</body>
+</html>  

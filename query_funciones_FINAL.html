@@ -1,0 +1,51 @@
+<!-- ENVIO DE DATOS DE FORMULARIO A PHP -->
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>PHP</title>
+</head>
+
+<body style="background-color: lightgray">
+
+	
+	<form action="query_funciones_v1.php" method="post">
+		<fieldset>
+			<h3 style="color:black;text-align:center"> ESCRITURA DE DATOS </h3>
+	
+			Nombre <br/>
+			<input type="text" name="nombre" value="" size="20" maxlength="20">
+			<br>
+ 
+			Numero de Registro <br/>
+			<input type="text" name="registro" value="" size="2" maxlength="2">
+			<br><br>
+			
+			<input name="escribir_registro" type="submit" value="Enviar Datos">
+ 
+		</fieldset>
+	</form>
+	
+	<form action="query_funciones_v1.php" method="post">
+		<fieldset>
+			<h3 style="color:black;text-align:center"> LECTURA DE DATOS </h3>			
+			<input name="leer_datos" type="submit" value="Lectura de datos">
+		</fieldset>
+		</form>
+	
+	<form action="query_funciones_v1.php" method="post">
+		<fieldset>
+			<h3 style="color:black;text-align:center"> BORRADO DE REGISTRO </h3>			
+			
+			Numero de Registro <br/>
+			<input type="text" name="registro" value="" size="2" maxlength="2">
+			<br><br>
+			
+			<input  name="borrar_registro" type="submit" value="Borrar Registro">
+		</fieldset>
+		</form>
+	
+	
+
+</body>
+
+</html>
